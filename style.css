@@ -74,6 +74,18 @@ ul{
     display: flex;
     align-items: center;
 }
+.col3{
+    flex: 50%;
+    float: left;
+    justify-content: center;
+}
+.col4{
+    flex: 50%;
+    float: right;
+    justify-content: center;
+    align-items: flex-start;
+    display: flex;
+}
 .info{
     width: 80%;
     background-color: #ffffff;
@@ -96,4 +108,234 @@ ul{
 }
 .col1 img{
     width: 350px;
+}
+
+
+.loop-holder {
+    display: flex;
+    white-space: nowrap;
+    overflow: hidden;
+    position: absolute;
+    top: 60px;
+    z-index: -1;
+  }
+  
+  .loop-holder__text {
+      animation: textLoop 10s linear infinite;
+      font-size: 10vw;
+      padding-right: .35em;
+      color: rgb(255, 255, 255);
+      font-weight: 800;
+      text-shadow:2px 0 0 #333333,0 2px 0 #333333,-2px 0 0 #333333,0 -2px 0 #333333;
+  }
+  
+  
+  @keyframes textLoop {
+      0% {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0)
+      }
+      100% {
+          -webkit-transform: translate3d(-100%, 0, 0);
+          transform: translate3d(-100%, 0, 0)
+      }
+  }
+
+.sinh-ton{
+    background-color: var(--ancient-color);
+    border-radius: 25px;
+    padding: 40px 50px;
+    margin: 0px 50px;
+    color: #fff;
+    text-align: center;
+    border: 5px solid #fff;
+}
+.sinh-ton p{
+    margin-top: 40px;
+}
+.img{
+    border-radius: 25px;
+    padding-top: 20px;
+}
+.img img{
+    width: 100%;
+    border-radius: 25px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cong-dong{
+    background-color: #fff;
+    border-radius: 25px;
+    padding: 40px 50px;
+    margin: 0px 50px;
+    color: var(--ancient-color);
+    text-align: center;
+    border: 5px solid var(--ancient-color);
+}
+.cong-dong p{
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.discord-btn{
+    color: #fff;
+    font-weight: 600;
+    background-color: var(--ancient-color);
+    border-radius: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    text-align: center;
+    transition: all 150ms;
+}
+.discord-btn:hover{
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: all 150ms;
+}
+
+.area{
+    background: var(--ancient-color);  
+    background: -webkit-linear-gradient(to left, #8f94fb, #4e54c8);  
+    width: 100%;
+    height:100vh;
+    position: absolute;
+   z-index: -1;
+}
+
+.circles{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+}
+
+.circles li{
+    position: absolute;
+    display: block;
+    list-style: none;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.2);
+    animation: animate 17s linear infinite;
+    bottom: -150px;
+    
+}
+
+.circles li:nth-child(1){
+    left: 25%;
+    width: 80px;
+    height: 80px;
+    animation-delay: 0s;
+}
+
+
+.circles li:nth-child(2){
+    left: 10%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 2s;
+    animation-duration: 12s;
+}
+
+.circles li:nth-child(3){
+    left: 70%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 4s;
+}
+
+.circles li:nth-child(4){
+    left: 40%;
+    width: 60px;
+    height: 60px;
+    animation-delay: 0s;
+    animation-duration: 18s;
+}
+
+.circles li:nth-child(5){
+    left: 65%;
+    width: 20px;
+    height: 20px;
+    animation-delay: 0s;
+}
+
+.circles li:nth-child(6){
+    left: 75%;
+    width: 110px;
+    height: 110px;
+    animation-delay: 3s;
+}
+
+.circles li:nth-child(7){
+    left: 35%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 7s;
+}
+
+.circles li:nth-child(8){
+    left: 50%;
+    width: 25px;
+    height: 25px;
+    animation-delay: 15s;
+    animation-duration: 45s;
+}
+
+.circles li:nth-child(9){
+    left: 20%;
+    width: 15px;
+    height: 15px;
+    animation-delay: 2s;
+    animation-duration: 35s;
+}
+
+.circles li:nth-child(10){
+    left: 85%;
+    width: 150px;
+    height: 150px;
+    animation-delay: 0s;
+    animation-duration: 11s;
+}
+
+
+
+@keyframes animate {
+
+    0%{
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+        border-radius: 5%;
+    }
+
+    100%{
+        transform: translateY(-1000px) rotate(720deg);
+        opacity: 0;
+        border-radius: 75%;
+    }
+
+}
+.mascot{
+    color: #fff;
+    text-align: center;
+}
+.mascot h1{
+    margin-top: 7vh;
+}
+.mascot img{
+    width: 400px;
+}
+.note{
+    font-size: 14px;
+    font-weight: 200;
+}
+.alynaa-info{
+    position: absolute;
+    top: 34vh;
+    right: 8vw;
+    width: 25vw;
 }
