@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fullpage.min.css">
+</head>
+<body>
+    <header>
+        <div class="page-title">ThiccSMP</div>
+        <nav>
+            <ul class="ulist" id="ulist">
+                <li class="list"><a href="#page1">Trang chủ</a></li>
+                <li class="list"><a href="#page2">Giới thiệu</a></li>
+                <li class="list"><a href="#page3">FAQ</a></li>
+                <li class="list"><a href="#page4">Ủng hộ</a></li>
+            </ul>
+        </nav>
+        <div class="links">Liên kết</div>
+    </header>
+    <div id="fullpage">
+        <div class="section page1 active" data-anchor="page1">
+            <div class="wrapper">
+                <div class="col1">
+                    <div class="mascot"><img src="./alynaa.png" alt=""></div>
+                </div>
+                <div class="col2">
+                    <div class="info">
+                        <h1>ThiccSMP</h1>
+                        <p>IP: <span>thiccsmp.qtpc.tech</span></p>
+                        <p>Port: Java - <span>1.17.x - 1.18.x</span> | Bedrock <span>mới nhất</span></p>
+                        <p><span>13 người chơi</span> đang online</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section page2" data-anchor="page2">b</div>
+        <div class="section page3" data-anchor="page3">c</div>
+        <div class="section page4"data-anchor="page4">d</div>
+    </div>
+    <script src="script.js"></script>
+    <script src="fullpage.min.js"></script>
+    <script>
+        new fullpage('#fullpage', {
+            anchors:['page1', 'page2', 'page3', 'page4'],
+            dragAndMove:true,
+        });
+    </script>
+</body>
+</html>
