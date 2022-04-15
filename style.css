@@ -14,7 +14,7 @@ header{
     align-items: center;
     padding: 30px 10%;
     background-color: var(--ancient-color);
-    z-index: 1000;
+    z-index: 2;
     position: relative;
     min-height: 70px;
     max-height: 70px;
@@ -126,7 +126,7 @@ ul{
       padding-right: .35em;
       color: rgb(255, 255, 255);
       font-weight: 800;
-      text-shadow:2px 0 0 #333333,0 2px 0 #333333,-2px 0 0 #333333,0 -2px 0 #333333;
+      text-shadow:2px 0 0 var(--ancient-color),0 2px 0 var(--ancient-color),-2px 0 0 var(--ancient-color),0 -2px 0 var(--ancient-color);
   }
   
   
@@ -223,7 +223,7 @@ ul{
     background: rgba(255, 255, 255, 0.2);
     animation: animate 17s linear infinite;
     bottom: -150px;
-    
+    z-index: 3;
 }
 
 .circles li:nth-child(1){
@@ -322,6 +322,7 @@ ul{
 .mascot{
     color: #fff;
     text-align: center;
+    z-index: 2;
 }
 .mascot h1{
     margin-top: 7vh;
